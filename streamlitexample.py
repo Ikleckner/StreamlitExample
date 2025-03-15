@@ -5,7 +5,6 @@ import seaborn as sns
 from sklearn.linear_model import LinearRegression
 import numpy as np
 
-@st.cache_data
 def load_data():
     df = pd.read_csv("/Users/IsabellaKleckner/Downloads/axe hackathon/movie_dataset.csv")  # Change to your dataset path
     df = df[['budget', 'popularity', 'genres', 'release_date', 'runtime', 'vote_average', 'vote_count', 'revenue']]
